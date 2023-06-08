@@ -17,14 +17,14 @@
 </head>
 <body>
     
-    <img class="logo" src="../Interface/img/logo.png" alt="Logo">
+    <img class="logo" src="./Interface/img/logo.png" alt="Logo">
     
     <div class="clouds">
-        <img src="../Interface/img/cloud1.png" style="--i:1;">
-        <img src="../Interface/img/cloud2.png" style="--i:2;">
-        <img src="../Interface/img/cloud3.png" style="--i:3;">
-        <img src="../Interface/img/cloud4.png" style="--i:4;">
-        <img src="../Interface/img/cloud5.png" style="--i:5;">
+        <img src="./Interface/img/cloud1.png" style="--i:1;">
+        <img src="./Interface/img/cloud2.png" style="--i:2;">
+        <img src="./Interface/img/cloud3.png" style="--i:3;">
+        <img src="./Interface/img/cloud4.png" style="--i:4;">
+        <img src="./Interface/img/cloud5.png" style="--i:5;">
     </div>
     
     <canvas class="webgl"></canvas>
@@ -64,7 +64,7 @@
         controls.update();
         //load gltf
         const loader = new GLTFLoader();
-        loader.load('C:/Users/hp/Desktop/Interface/3Dmodel', function(gltf) {
+        loader.load('./Interface/3Dmodel', function(gltf) {
             const model = gltf.scene;
             model.position.set(0,0,0);
             scene.add(model);
