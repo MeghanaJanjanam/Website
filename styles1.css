@@ -13,6 +13,13 @@ body{
     width: 130px; /* adjust the width and height as needed */
     height: 80px;
 }
+:host {
+    display: block;
+    position: relative;
+    contain: strict;
+    width: 300px;
+    height: 150px;
+}
 
 .clouds{
     position: absolute;
